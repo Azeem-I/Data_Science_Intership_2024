@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regex Matcher</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            background-color: navy;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            position: relative;
+        }
+        .left-box {
+            position: absolute;
+            top: 50%;
+            left: 20px;
+            transform: translateY(-50%);
+            background-color: black;
+            padding: 10px;
+            color: red;
+        }
+        .bottom-box {
+            position: absolute;
+            top: 50%;
+            right: 20px;
+            transform: translateY(-50%);
+            background-color: black;
+            padding: 10px;
+            color: red;
+        }
+        form {
+            margin-bottom: 20px;
+        }
+        input[type="text"] {
+            width: 300px;
+            padding: 10px;
+            border: 3px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            padding: 10px 20px;
+            border: 3px solid #ccc;
+            border-radius: 5px;
+            cursor: pointer;
+            background-color: orange;
+            color: navy;
+        }
+        h1, h2, h3 {
+            color: orange;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Regex Matcher</h1>
+        <form action="/results" method="post">
+            <label for="test_string">Test String:</label><br>
+            <input type="text" id="test_string" name="test_string"><br>
+            <label for="regex">Regex Pattern:</label><br>
+            <input type="text" id="regex" name="regex"><br>
+            <button type="submit">Match</button>
+        </form>
+
+        <hr>
+
+        <h2>Email Validation</h2>
+        <form action="/validate-email" method="post">
+            <label for="email">Email:</label><br>
+            <input type="text" id="email" name="email"><br>
+            <button type="submit">Validate Email</button>
+        </form>
+    </div>
+
+    <div class="left-box">
+        <h3>Innomatics Research Labs</h3>
+    </div>
+
+    <div class="bottom-box">
+        <h3>Internship</h3>
+    </div>
+</body>
+</html>
